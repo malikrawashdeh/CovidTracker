@@ -4,6 +4,7 @@ import { Line, Bar } from "react-chartjs-2";
 import styles from "./Chart.module.css";
 import chart from "chart.js/auto";
 
+const chartk = chart;
 const Chart = ({ data: { confirmed, deaths }, country }) => {
   const [dailyData, setDailyData] = useState([]);
   useEffect(() => {
